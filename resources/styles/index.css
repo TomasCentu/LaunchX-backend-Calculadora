@@ -14,7 +14,7 @@ body {
 .calculadora_conteiner {
     width: 50%;
     max-width: 300px;
-    height: 350px;
+    height: 360px;
     margin: auto;
     background: #FFFFFF88;
     padding: 2rem;
@@ -27,10 +27,12 @@ body {
     position: absolute;
     font-size: .75rem;
     color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .calculadora_header {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .calculadora_salida {
@@ -41,9 +43,11 @@ body {
     background: transparent;
     color: #000;
     text-align: right;
-    letter-spacing: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: default;
+    padding: 1rem;
+    overflow: hidden;
+    border-bottom: 1px solid #DDDDDD88;
 }
 
 .calculadora_body {
@@ -59,6 +63,15 @@ body {
     border-radius: 10px;
     background: #dddddddd;
     cursor: pointer;
+    font-weight: bold;
+}
+
+#btn_borrar {
+    color : #c6449b;
+}
+
+#btn_enter {
+    color: #3030c8;
 }
 
 .calculadora_button:hover {
@@ -68,4 +81,17 @@ body {
 .calculadora_button.enter {
     grid-column: 4;
     grid-row: 4/6;
+}
+
+@media (max-width: 550px) {
+    .calculadora_conteiner {
+        width: 65%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    .calculadora_conteiner {
+        width: 80%;
+    }
 }
